@@ -30,7 +30,7 @@ First, start the Free5GC core:
 
 Open the core folder and:
 
-1. Start the core services: `docker-compose docker-compose up -d`
+1. Start the core services: `docker-compose up -d`
 2. Go to the webapp (localhost:3000) and register the UE device.
 
 To access the webapp:
@@ -48,7 +48,7 @@ Register the UE:
 
 In the ran folder:
 
-1. Start the scenario: 'docker-compose up -d`
+1. Start the scenario: `docker-compose up -d`
 2. Access the UE pod and make sure the `oaitun_ue1` tunnel is configure when running `ifconfig`.
 
 ### Enviroment Test
