@@ -1,0 +1,69 @@
+version: "2.2"
+services:
+    mongo:
+        image: zanattabruno/mongo:4.4.8
+        volumes:
+            - ./database:/data/db
+        networks:
+            net1:
+                ipv4_address: 192.188.2.10
+    amf:
+        image: zanattabruno/core_amf
+        depends_on:
+            - mongo
+        networks:
+            net1:
+                ipv4_address: 192.188.2.2
+    upf:
+        image: zanattabruno/core_upf
+        privileged: true
+        depends_on:
+            - amf
+            - mongo
+        volumes:
+              - "/dev/net/tun:/dev/net/tun"
+        cap_add:
+              - NET_ADMIN
+        networks:
+            net1:
+                ipv4_address: 192.188.2.6
+    smf:
+        image: zanattabruno/core_smf
+        depends_on:
+            - mongo
+            - upf
+        networks:
+            net1:
+                ipv4_address: 192.188.2.4
+    hss:
+        image: zanattabruno/core_hss
+        depends_on:
+            - mongo
+        networks:
+            net1:
+                ipv4_address: 192.188.2.3
+    pcrf:
+        image: zanattabruno/core_pcrf
+        depends_on:
+            - mongo
+            - smf
+        networks:
+            net1:
+                ipv4_address: 192.188.2.5
+    webapp:
+        image: zanattabruno/core_webapp
+        ports:
+            - 3000:3000
+        environment:
+            - DB_URI=mongodb://192.188.2.10:27017/free5gc
+        depends_on:
+            - mongo
+        networks:
+            net1:
+                ipv4_address: 192.188.2.11
+networks:
+    net1:
+        ipam:
+            driver: default
+            config:
+                - subnet: 192.188.2.0/24

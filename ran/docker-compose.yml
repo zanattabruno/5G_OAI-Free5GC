@@ -1,0 +1,40 @@
+version: "2.2"
+services:
+    cu_nfapi:
+        image: zanattabruno/cudurunfapi_cu_nfapi
+        privileged: true
+        stdin_open: true
+        tty: true
+        cap_add:
+            - NET_ADMIN
+        networks:
+            net1:
+                ipv4_address: 192.188.2.243
+    du_nfapi:
+        image: zanattabruno/cudurunfapi_du_nfapi
+        depends_on:
+            - cu_nfapi
+        privileged: true
+        stdin_open: true
+        tty: true
+        cap_add:
+            - NET_ADMIN
+        networks:
+            net1:
+                ipv4_address: 192.188.2.244
+    ru_nfapi:
+        image: zanattabruno/cudurunfapi_ru_nfapi
+        depends_on:
+            - du_nfapi
+        privileged: true
+        stdin_open: true
+        tty: true
+        cap_add:
+            - NET_ADMIN
+        networks:
+            net1:
+                ipv4_address: 192.188.2.245
+networks:
+    net1:
+      external:
+        name: core_net1
