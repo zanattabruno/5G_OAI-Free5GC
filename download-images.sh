@@ -2,7 +2,7 @@
 
 #Download Free5GC core images:
 
-docker pull zanattabruno/mongo
+docker pull zanattabruno/mongo:4.4.8
 docker pull zanattabruno/core_webapp
 docker pull zanattabruno/core_upf
 docker pull zanattabruno/core_smf
