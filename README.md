@@ -18,7 +18,7 @@ For more information:
 
 ### Download Images
 
-Firstly download all imgaes ruuning script download-images.sh:
+Firstly download all images running the script download-images.sh:
 
 ```sh
 bash download-images.sh
