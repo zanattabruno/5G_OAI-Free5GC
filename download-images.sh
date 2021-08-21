@@ -2,16 +2,16 @@
 
 #Download Free5GC core images:
 
-docker push zanattabruno/mongo
-docker push zanattabruno/core_webapp
-docker push zanattabruno/core_upf
-docker push zanattabruno/core_smf
-docker push zanattabruno/core_hss
-docker push zanattabruno/core_amf
-docker push zanattabruno/core_pcrf
+docker pull zanattabruno/mongo
+docker pull zanattabruno/core_webapp
+docker pull zanattabruno/core_upf
+docker pull zanattabruno/core_smf
+docker pull zanattabruno/core_hss
+docker pull zanattabruno/core_amf
+docker pull zanattabruno/core_pcrf
 
 #Download Free5GC core images:
 
-docker push zanattabruno/cudurunfapi_ru_nfapi
-docker push zanattabruno/cudurunfapi_du_nfapi
-docker push zanattabruno/cudurunfapi_cu_nfapi
+docker pull zanattabruno/cudurunfapi_ru_nfapi
+docker pull zanattabruno/cudurunfapi_du_nfapi
+docker pull zanattabruno/cudurunfapi_cu_nfapi
