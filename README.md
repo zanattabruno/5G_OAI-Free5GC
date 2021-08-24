@@ -60,7 +60,7 @@ docker exec -it ran_ru_nfapi_1 bash
 
 2. Ping from nterface oaitun_ue1 from inside container:
 ```sh
- ping -I oaitun_uem1 1.1.1.1
+ ping -I oaitun_ue1 1.1.1.1
  ```
 
 
