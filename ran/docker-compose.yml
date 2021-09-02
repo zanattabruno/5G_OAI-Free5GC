@@ -10,6 +10,7 @@ services:
         networks:
             net1:
                 ipv4_address: 192.188.2.243
+        command: tail -F anything
     du_nfapi:
         image: zanattabruno/cudurunfapi_du_nfapi
         depends_on:
