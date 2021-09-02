@@ -7,7 +7,7 @@ services:
         tty: true
         cap_add:
             - NET_ADMIN
-        command: tail -F anything
+        #command: tail -F anything
         networks:
             net1:
                 ipv4_address: 192.188.2.243
@@ -21,7 +21,7 @@ services:
         tty: true
         cap_add:
             - NET_ADMIN
-        command: tail -F anything
+        #command: tail -F anything
         networks:
             net1:
                 ipv4_address: 192.188.2.244
@@ -34,7 +34,7 @@ services:
         tty: true
         cap_add:
             - NET_ADMIN
-        command: tail -F anything
+        #command: tail -F anything
         networks:
             net1:
                 ipv4_address: 192.188.2.245
