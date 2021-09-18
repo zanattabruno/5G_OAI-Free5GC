@@ -1,5 +1,5 @@
 # 5G_OAI-Free5GC
-Test environment for 5G solutions with OAI RAN and Free5GC network core.
+Test environment for 5G open solutions with OAI RAN and Free5GC network core.
 
 ## Project Description
 
