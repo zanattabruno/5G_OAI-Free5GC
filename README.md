@@ -1,9 +1,9 @@
 # 5G_OAI-Free5GC
-Test with OAI RAN and Free5GC core
+Test environment with OAI RAN and Free5GC core
 
 ## Project Description
 
-In this repository, we developed an environment for simulating UE and ENB using l2NFAPI simulator from Open Air interface connected into 5g core from free5gcore. This work is on-going.
+This tutorial shows how to deploy a 5G environment for simulating RAN split in RU (Radio Unit), DU (Data Unit) and CU (Control Unit) using l2NFAPI simulator from Open Air interface connected into 5g core from free5gcore. This work is ongoing. The primary goal of this implementation is to homologate if an environment (Hardware, SO, Container solution) can run Free 5G and Openair based 5G Network.
 
 For more information:
 * [free5gc](https://www.free5gc.org/)
