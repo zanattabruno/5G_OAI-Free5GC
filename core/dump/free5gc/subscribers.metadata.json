@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"unique":true,"key":{"imsi":{"$numberInt":"1"}},"name":"imsi_1","background":true}],"uuid":"a242a130b7604fe0a3a10cdc12c972d5","collectionName":"subscribers","type":"collection"}
