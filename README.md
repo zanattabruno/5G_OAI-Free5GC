@@ -13,6 +13,7 @@ For more information:
 
 * [Docker](https://docs.docker.com/install/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
+* Linux with low latency kernel, preferentially Ubuntu. (we tested in Ubuntu and Debian)
 
 ## Run a scenario
 
