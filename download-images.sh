@@ -10,7 +10,7 @@ docker pull zanattabruno/core_hss
 docker pull zanattabruno/core_amf
 docker pull zanattabruno/core_pcrf
 
-#Download Free5GC core images:
+#Download OAI RAN images:
 
 docker pull zanattabruno/cudurunfapi_ru_nfapi
 docker pull zanattabruno/cudurunfapi_du_nfapi
